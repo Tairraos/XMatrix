@@ -56,7 +56,7 @@ void key_scan(void)
       init_flag = 0;
       switch (ap_ez_change) {
         case 0 :
-          (SMART_CONFIG);
+          mcu_set_wifi_mode(SMART_CONFIG);
           break;
         case 1 :
           mcu_set_wifi_mode(AP_CONFIG);
